@@ -1,4 +1,8 @@
 export default {
+  getAll: () => fetch(
+    "http://localhost:8080/package",
+    {mode: 'cors'}
+    ),
     createPackage: (newPackage) => fetch(
         "http://localhost:8080/package", {
           mode: 'cors',
